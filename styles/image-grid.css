@@ -1,0 +1,29 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+  gap: 20px;
+}
+
+.image-grid__lg {
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.image-grid__sm {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .image-grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);;
+  }
+
+  .image-grid__lg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: 100%;
+  }
+}

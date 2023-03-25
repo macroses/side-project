@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@import 'styles/logo.css';
+@import 'styles/navigation.css';
+@import 'styles/button.css';
+@import 'styles/image-grid.css';
+@import 'styles/page.css';
+@import 'styles/form.css';
+@import 'styles/hero.css';
+@import 'styles/instruction.css';
+@import 'styles/footer.css';
+@import 'styles/faq.css';
+
+:root {
+  --color-black: #131313;
+  --color-bg: #f6fbff;
+  --color-blue: #5e94bf;
+  --color-light-gray: #d9d9d9;
+  --color-gray: #333333;
+  --color-yellow: #fcb454;
+  --color-green: #15ea1e;
+  --shadow: 0 4px 24px rgba(0, 0, 0, .08);
+}

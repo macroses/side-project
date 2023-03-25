@@ -1,0 +1,72 @@
+.faq {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item {
+  --bs-accordion-bg: transparent;
+
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.faq__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.faq__button {
+  --bs-accordion-btn-color: white;
+  --bs-accordion-active-color: white;
+  --bs-accordion-btn-bg: var(--color-blue);
+  --bs-accordion-active-bg: var(--color-blue);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.faq__button::after {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3696 2.11906L10.6195 10.8691C10.5383 10.9504 10.4418 11.015 10.3356 11.059C10.2293 11.103 10.1155 11.1257 10.0005 11.1257C9.8855 11.1257 9.77164 11.103 9.66541 11.059C9.55919 11.015 9.46269 10.9504 9.38142 10.8691L0.631424 2.11906C0.467238 1.95488 0.375 1.73219 0.375 1.5C0.375 1.2678 0.467238 1.04512 0.631424 0.880935C0.79561 0.71675 1.01829 0.624512 1.25049 0.624512C1.48268 0.624512 1.70536 0.71675 1.86955 0.880935L10.0005 9.01297L18.1314 0.880935C18.2127 0.799639 18.3092 0.735151 18.4155 0.691154C18.5217 0.647156 18.6355 0.624512 18.7505 0.624512C18.8655 0.624512 18.9793 0.647156 19.0855 0.691154C19.1917 0.735151 19.2883 0.799639 19.3696 0.880935C19.4508 0.962232 19.5153 1.05874 19.5593 1.16496C19.6033 1.27118 19.626 1.38503 19.626 1.5C19.626 1.61497 19.6033 1.72881 19.5593 1.83503C19.5153 1.94125 19.4508 2.03776 19.3696 2.11906Z' fill='white'/%3E%3C/svg%3E%0A");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+
+  background-position: center;
+}
+
+.faq__icon {
+  margin-right: 8px;
+}
+
+.faq__answer {
+  padding: 16px 8px;
+  background-color: white;
+  border-radius: 0 0 8px 8px !important;
+}
+
+.faq__answer p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+  .faq__item {
+    margin-bottom: 40px;
+  }
+
+  .faq__button {
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .faq__icon {
+    margin-right: 16px;
+  }
+
+  .faq__answer {
+    padding: 32px;
+  }
+}
